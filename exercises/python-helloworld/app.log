@@ -1,0 +1,57 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.254.54:5000/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.254.54:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Udacity-Course\nd064_course_1\exercises\python-helloworld\app.py", line 24, in appmetrics
+    app.logger("Metrics request successfull")
+TypeError: 'Logger' object is not callable
+INFO:werkzeug:192.168.254.54 - - [19/Jun/2021 10:08:04] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Udacity-Course\nd064_course_1\exercises\python-helloworld\app.py", line 9, in hello
+    app.logger("Main request successfull")
+TypeError: 'Logger' object is not callable
+INFO:werkzeug:192.168.254.54 - - [19/Jun/2021 10:09:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\karun\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Udacity-Course\nd064_course_1\exercises\python-helloworld\app.py", line 9, in hello
+    app.logger.info("Main request successfull")
+TypeError: 'Logger' object is not callable
+INFO:werkzeug:192.168.254.54 - - [19/Jun/2021 10:10:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.254.54:5000/ (Press CTRL+C to quit)
+INFO:app:Main request successfull
+INFO:werkzeug:192.168.254.54 - - [19/Jun/2021 10:10:51] "GET / HTTP/1.1" 200 -
+INFO:app:Status request successfull
+INFO:werkzeug:192.168.254.54 - - [19/Jun/2021 10:11:26] "GET /status HTTP/1.1" 200 -
+INFO:app:Metrics request successfull
+INFO:werkzeug:192.168.254.54 - - [19/Jun/2021 10:11:39] "GET /metrics HTTP/1.1" 200 -
